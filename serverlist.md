@@ -1,13 +1,13 @@
 ---
-title: サーバー一覧
-icon: /static/mine.webp
-order: 99
+title: サーバーリスト
+icon: home
 date: 2023-08-16
+description: GravisMCのドキュメント
+order: 100
 ---
 
-
 - hub（ハブ）サーバー
-　- hubワールドs
+　- hubワールド
 
 - survival（サバイバル）サーバー
  - 経済ワールド（オーバー, ネザー, エンド）
