@@ -32,8 +32,15 @@ order: 100
 /town here | 自分が立っている町の情報を表示します。
 /town new 町の名前 | 新しい町を作ります。
 /town claim | 今立っている土地を町の土地にします。
+/town claim auto | 自動で周囲の土地を購入します。(町の銀行にお金がある場合のみ)
 /town claim outpost | 今立っている土地をアウトポストに設定します。
 /town unclaim | 土地を手放します。
+/town deposit 金額 | 町の銀行にお金を追加します。
+/town deposit all | 所持金を全て銀行に追加する。
+/town deposit 金額 町の名前 | 指定した町の銀行にお金を追加します。
+/town withdraw 金額 | 町の銀行からお金を引き出します。
+/town withdraw all | 町の銀行からお金を全額引き出します。
+/town bankhistory | 町の銀行の履歴を表示します。
 /town leave | 町から抜けます。
  add ユーザーネーム | 町へプレイヤーを招待します(市長のみ)/accept (承諾) /deny (拒否)
 /town kick ユーザーネーム | 町からプレイヤーをキックします(市長のみ)
@@ -45,4 +52,5 @@ order: 100
 /town list | 町の一覧を表示します。
 /town online | 自分の町のオンラインプレイヤーを表示します。
 /town plots 町の名前 | 町が所有する土地とその種類/収益の役立つリストを表示します。
+/town baltop | 指定した町の最も裕福なプレイヤーを表示します。
 
