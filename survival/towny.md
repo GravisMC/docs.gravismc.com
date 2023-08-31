@@ -10,4 +10,4 @@ order: 100
 コマンド | 説明
 ---    | ---
 /towny | コマンドのヘルプ一覧を表示する
-/towny | Green
+/towny ？| Green
