@@ -71,7 +71,7 @@ order: 100
 /town set homeblock | あなたの町のホームブロックとスポーンを設定します。
 /town set mapcolor 色 |  dynmap に表示される町のマップカラーを設定します。
 /town set neme | 町の名前を変更します。
-/town set outpost アウトポストのスポーンポイントをプレイヤーの位置にリセットします。（アウトポストで使用する必要があります。）
+/town set outpost | アウトポストのスポーンポイントをプレイヤーの位置にリセットします。（アウトポストで使用する必要があります。）
 /town set taxes 金額 | 各居住者から毎日徴収される税金を設定します。（Taxpercent がオンになっている場合は、パーセンテージも設定します。）
 /town set taxpercentcap 金額 | Taxpercent が有効な場合に取得できる最大金額。
 /town set plottax 金額 | 各居住者が所有する区画ごとに、毎日徴収される税金を設定します。
