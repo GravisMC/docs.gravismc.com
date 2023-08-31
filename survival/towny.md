@@ -5,7 +5,7 @@ date: 2023-08-12
 description: GravisMCのドキュメント
 order: 100
 ---
-Towny (/towny)コマンド
+#Towny (/towny)コマンド
 
 コマンド | 説明
 ---    | ---
