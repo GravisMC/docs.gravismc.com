@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.2.0.746764147535">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.2.0.746764878825">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.2.0">
@@ -30,11 +30,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.2.0.746764147535" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.2.0.746764878825" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.2.0.746764147535" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.2.0.746764878825" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.2.0.746764147535" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.2.0.746764878825" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -312,12 +312,40 @@
 <td>今立っている土地を町の土地にします。</td>
 </tr>
 <tr>
+<td>/town claim auto</td>
+<td>自動で周囲の土地を購入します。(町の銀行にお金がある場合のみ)</td>
+</tr>
+<tr>
 <td>/town claim outpost</td>
 <td>今立っている土地をアウトポストに設定します。</td>
 </tr>
 <tr>
 <td>/town unclaim</td>
 <td>土地を手放します。</td>
+</tr>
+<tr>
+<td>/town deposit 金額</td>
+<td>町の銀行にお金を追加します。</td>
+</tr>
+<tr>
+<td>/town deposit all</td>
+<td>所持金を全て銀行に追加する。</td>
+</tr>
+<tr>
+<td>/town deposit 金額 町の名前</td>
+<td>指定した町の銀行にお金を追加します。</td>
+</tr>
+<tr>
+<td>/town withdraw 金額</td>
+<td>町の銀行からお金を引き出します。</td>
+</tr>
+<tr>
+<td>/town withdraw all</td>
+<td>町の銀行からお金を全額引き出します。</td>
+</tr>
+<tr>
+<td>/town bankhistory</td>
+<td>町の銀行の履歴を表示します。</td>
 </tr>
 <tr>
 <td>/town leave</td>
@@ -362,6 +390,10 @@
 <tr>
 <td>/town plots 町の名前</td>
 <td>町が所有する土地とその種類/収益の役立つリストを表示します。</td>
+</tr>
+<tr>
+<td>/town baltop</td>
+<td>指定した町の最も裕福なプレイヤーを表示します。</td>
 </tr>
 </tbody>
 </table>
