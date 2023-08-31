@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.2.0.746770694803">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.2.0.746770732384">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.2.0">
@@ -30,11 +30,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.2.0.746770694803" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.2.0.746770732384" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.2.0.746770694803" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.2.0.746770732384" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.2.0.746770694803" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.2.0.746770732384" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -278,58 +278,218 @@
         <span>Town (/town)コマンド</span>
     </h1>
 </doc-anchor-target>
-<p>コマンド | 説明
----    | ---
-/town| 自分の町の情報を表示します。
-/town ? | 使用可能な /town コマンドを表示します。
-/town 街の名前 | 指定した町の情報を表示します。
-/town here | 自分が立っている町の情報を表示します。
-/town new 町の名前 | 新しい町を作ります。
-/town claim | 今立っている土地を町の土地にします。
-/town claim auto | 自動で周囲の土地を購入します。(町の銀行にお金がある場合のみ)
-/town claim outpost | 今立っている土地をアウトポストに設定します。
-/town unclaim | 土地を手放します。
-/town deposit 金額 | 町の銀行にお金を追加します。
-/town deposit all | 所持金を全て銀行に追加する。
-/town deposit 金額 町の名前 | 指定した町の銀行にお金を追加します。
-/town withdraw 金額 | 町の銀行からお金を引き出します。
-/town withdraw all | 町の銀行からお金を全額引き出します。
-/town bankhistory | 町の銀行の履歴を表示します。
-/town leave | 町から抜けます。
-add ユーザーネーム | 町へプレイヤーを招待します(市長のみ)/accept (承諾) /deny (拒否)
-/town kick ユーザーネーム | 町からプレイヤーをキックします(市長のみ)
-/town invite | あなたの街への招待状を受け取ったプレイヤーのリストを表示します。
-/town spawn | 町のスポーン地点にテレポートします。
-/town outpost 数字 | 指定したアウトポストにテレポートします(アウトポストに設定した順番で数字が割り当てられる)
-/town set spawn | 自分がいる場所を町のスポーン地点に設定する。(ホームブロックの中のみ)
-/town spawn 町の名前 | 指定した町のスポーン地点にテレポートする。(パブリックのみ)
-/town list | 町の一覧を表示します。
-/town online | 自分の町のオンラインプレイヤーを表示します。
-/town plots 町の名前 | 町が所有する土地とその種類/収益の役立つリストを表示します。
-/town baltop | 指定した町の最も裕福なプレイヤーを表示します。
-/town allylist 町の名前 | タウンの同盟者のリストを表示します。
-/town enemylist | 町の敵のリストを表示します。
-/town merge 町の名前 | 指定した町と自分の町を合併します。
-/town outlawlist 町の名前 | 町の無法者のリストを表示します。
-/town outlaw add/remove ユーザーネーム | 町の無法者リストに無法者を追加または削除します
-/town plotgrouplist 町の名前 page 数字 | 販売と価格が示された町の区画グループをリストします。
-/town purge 日数 | 指定された日数活動しなかった住民を町から追い出し、npc と市長を免除します。
-/town ranklist 町の名前 | 住民とその階級を表示します。別の町の階級リストを表示するためのオプションの町名も表示します。
-/town rank add/remove ユーザーネーム ランク名 | 町の住人にランクを付与または削除します。
-/town reclaim | 居住者が荒廃した町を取り戻すことができます。
-/town reslist 町の名前 | 町の全住民の完全なリストを表示します。
-/town say メッセージ | オンライの住人にメッセージを送信します。
-/town set board メッセージ | ログイン時に住民に表示されるメッセージを設定します。
-/town set none | ログイン時や /town ステータス画面には表示されない空のボードを設定します。
-/town set mayor 住民の名前 | 別の住民に市長の地位を与える。(市長のみ)
-/town set homeblock | あなたの町のホームブロックとスポーンを設定します。
-/town set mapcolor 色 |  dynmap に表示される町のマップカラーを設定します。
-/town set neme | 町の名前を変更します。
-/town set outpost アウトポストのスポーンポイントをプレイヤーの位置にリセットします。（アウトポストで使用する必要があります。）
-/town set taxes 金額 | 各居住者から毎日徴収される税金を設定します。（Taxpercent がオンになっている場合は、パーセンテージも設定します。）
-/town set taxpercentcap 金額 | Taxpercent が有効な場合に取得できる最大金額。
-/town set plottax 金額 | 各居住者が所有する区画ごとに、毎日徴収される税金を設定します。
-/town set plotprice 金額 |  町のデフォルトの土地のコストを設定します。</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>コマンド</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/town</td>
+<td>自分の町の情報を表示します。</td>
+</tr>
+<tr>
+<td>/town ?</td>
+<td>使用可能な /town コマンドを表示します。</td>
+</tr>
+<tr>
+<td>/town 街の名前</td>
+<td>指定した町の情報を表示します。</td>
+</tr>
+<tr>
+<td>/town here</td>
+<td>自分が立っている町の情報を表示します。</td>
+</tr>
+<tr>
+<td>/town new 町の名前</td>
+<td>新しい町を作ります。</td>
+</tr>
+<tr>
+<td>/town claim</td>
+<td>今立っている土地を町の土地にします。</td>
+</tr>
+<tr>
+<td>/town claim auto</td>
+<td>自動で周囲の土地を購入します。(町の銀行にお金がある場合のみ)</td>
+</tr>
+<tr>
+<td>/town claim outpost</td>
+<td>今立っている土地をアウトポストに設定します。</td>
+</tr>
+<tr>
+<td>/town unclaim</td>
+<td>土地を手放します。</td>
+</tr>
+<tr>
+<td>/town deposit 金額</td>
+<td>町の銀行にお金を追加します。</td>
+</tr>
+<tr>
+<td>/town deposit all</td>
+<td>所持金を全て銀行に追加する。</td>
+</tr>
+<tr>
+<td>/town deposit 金額 町の名前</td>
+<td>指定した町の銀行にお金を追加します。</td>
+</tr>
+<tr>
+<td>/town withdraw 金額</td>
+<td>町の銀行からお金を引き出します。</td>
+</tr>
+<tr>
+<td>/town withdraw all</td>
+<td>町の銀行からお金を全額引き出します。</td>
+</tr>
+<tr>
+<td>/town bankhistory</td>
+<td>町の銀行の履歴を表示します。</td>
+</tr>
+<tr>
+<td>/town leave</td>
+<td>町から抜けます。</td>
+</tr>
+<tr>
+<td>add ユーザーネーム</td>
+<td>町へプレイヤーを招待します(市長のみ)/accept (承諾) /deny (拒否)</td>
+</tr>
+<tr>
+<td>/town kick ユーザーネーム</td>
+<td>町からプレイヤーをキックします(市長のみ)</td>
+</tr>
+<tr>
+<td>/town invite</td>
+<td>あなたの街への招待状を受け取ったプレイヤーのリストを表示します。</td>
+</tr>
+<tr>
+<td>/town spawn</td>
+<td>町のスポーン地点にテレポートします。</td>
+</tr>
+<tr>
+<td>/town outpost 数字</td>
+<td>指定したアウトポストにテレポートします(アウトポストに設定した順番で数字が割り当てられる)</td>
+</tr>
+<tr>
+<td>/town set spawn</td>
+<td>自分がいる場所を町のスポーン地点に設定する。(ホームブロックの中のみ)</td>
+</tr>
+<tr>
+<td>/town spawn 町の名前</td>
+<td>指定した町のスポーン地点にテレポートする。(パブリックのみ)</td>
+</tr>
+<tr>
+<td>/town list</td>
+<td>町の一覧を表示します。</td>
+</tr>
+<tr>
+<td>/town online</td>
+<td>自分の町のオンラインプレイヤーを表示します。</td>
+</tr>
+<tr>
+<td>/town plots 町の名前</td>
+<td>町が所有する土地とその種類/収益の役立つリストを表示します。</td>
+</tr>
+<tr>
+<td>/town baltop</td>
+<td>指定した町の最も裕福なプレイヤーを表示します。</td>
+</tr>
+<tr>
+<td>/town allylist 町の名前</td>
+<td>タウンの同盟者のリストを表示します。</td>
+</tr>
+<tr>
+<td>/town enemylist</td>
+<td>町の敵のリストを表示します。</td>
+</tr>
+<tr>
+<td>/town merge 町の名前</td>
+<td>指定した町と自分の町を合併します。</td>
+</tr>
+<tr>
+<td>/town outlawlist 町の名前</td>
+<td>町の無法者のリストを表示します。</td>
+</tr>
+<tr>
+<td>/town outlaw add/remove ユーザーネーム</td>
+<td>町の無法者リストに無法者を追加または削除します</td>
+</tr>
+<tr>
+<td>/town plotgrouplist 町の名前 page 数字</td>
+<td>販売と価格が示された町の区画グループをリストします。</td>
+</tr>
+<tr>
+<td>/town purge 日数</td>
+<td>指定された日数活動しなかった住民を町から追い出し、npc と市長を免除します。</td>
+</tr>
+<tr>
+<td>/town ranklist 町の名前</td>
+<td>住民とその階級を表示します。別の町の階級リストを表示するためのオプションの町名も表示します。</td>
+</tr>
+<tr>
+<td>/town rank add/remove ユーザーネーム ランク名</td>
+<td>町の住人にランクを付与または削除します。</td>
+</tr>
+<tr>
+<td>/town reclaim</td>
+<td>居住者が荒廃した町を取り戻すことができます。</td>
+</tr>
+<tr>
+<td>/town reslist 町の名前</td>
+<td>町の全住民の完全なリストを表示します。</td>
+</tr>
+<tr>
+<td>/town say メッセージ</td>
+<td>オンライの住人にメッセージを送信します。</td>
+</tr>
+<tr>
+<td>/town set board メッセージ</td>
+<td>ログイン時に住民に表示されるメッセージを設定します。</td>
+</tr>
+<tr>
+<td>/town set none</td>
+<td>ログイン時や /town ステータス画面には表示されない空のボードを設定します。</td>
+</tr>
+<tr>
+<td>/town set mayor 住民の名前</td>
+<td>別の住民に市長の地位を与える。(市長のみ)</td>
+</tr>
+<tr>
+<td>/town set homeblock</td>
+<td>あなたの町のホームブロックとスポーンを設定します。</td>
+</tr>
+<tr>
+<td>/town set mapcolor 色</td>
+<td>dynmap に表示される町のマップカラーを設定します。</td>
+</tr>
+<tr>
+<td>/town set neme</td>
+<td>町の名前を変更します。</td>
+</tr>
+<tr>
+<td>/town set outpost</td>
+<td>アウトポストのスポーンポイントをプレイヤーの位置にリセットします。（アウトポストで使用する必要があります。）</td>
+</tr>
+<tr>
+<td>/town set taxes 金額</td>
+<td>各居住者から毎日徴収される税金を設定します。（Taxpercent がオンになっている場合は、パーセンテージも設定します。）</td>
+</tr>
+<tr>
+<td>/town set taxpercentcap 金額</td>
+<td>Taxpercent が有効な場合に取得できる最大金額。</td>
+</tr>
+<tr>
+<td>/town set plottax 金額</td>
+<td>各居住者が所有する区画ごとに、毎日徴収される税金を設定します。</td>
+</tr>
+<tr>
+<td>/town set plotprice 金額</td>
+<td>町のデフォルトの土地のコストを設定します。</td>
+</tr>
+</tbody>
+</table>
+</div>
 
                                 
                                 <!-- Required only on API pages -->
