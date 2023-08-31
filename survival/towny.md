@@ -6,7 +6,7 @@ description: GravisMCのドキュメント
 order: 100
 ---
 Towny (/towny)コマンド
-{.compact}
+
 コマンド | 説明
 ---    | ---
 /towny | 基本的なタウンコマンドを表示します。
