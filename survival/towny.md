@@ -76,3 +76,9 @@ order: 100
 /town set taxpercentcap 金額 | Taxpercent が有効な場合に取得できる最大金額。
 /town set plottax 金額 | 各居住者が所有する区画ごとに、毎日徴収される税金を設定します。
 /town set plotprice 金額 |  町のデフォルトの土地のコストを設定します。
+/town set shopprice 金額 | 町のショッププロットのデフォルトのコストを設定します
+/town set shoptax 金額 | 各居住者が所有する店舗敷地ごとに、毎日各居住者から徴収する税金を設定します。
+/town set embassyprice 金額 | 町の大使館敷地のデフォルトのコストを設定します。
+/town set embassyprice 金額 | 町の大使館敷地のデフォルトのコストを設定します。
+/town set embassytax 金額 | 各居住者が所有する大使館敷地ごとに、毎日各居住者から徴収する税金を設定します。
+/town set title ユーザーネーム タイトル | 町のメンバーに称号を追加します。(市長のみ)
