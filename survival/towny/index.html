@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.2.0.746763147149">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.2.0.746764147535">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.2.0">
@@ -30,11 +30,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.2.0.746763147149" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.2.0.746764147535" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.2.0.746763147149" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.2.0.746764147535" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.2.0.746763147149" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.2.0.746764147535" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -304,8 +304,52 @@
 <td>自分が立っている町の情報を表示します。</td>
 </tr>
 <tr>
+<td>/town new 町の名前</td>
+<td>新しい町を作ります。</td>
+</tr>
+<tr>
+<td>/town claim</td>
+<td>今立っている土地を町の土地にします。</td>
+</tr>
+<tr>
+<td>/town claim outpost</td>
+<td>今立っている土地をアウトポストに設定します。</td>
+</tr>
+<tr>
+<td>/town unclaim</td>
+<td>土地を手放します。</td>
+</tr>
+<tr>
 <td>/town leave</td>
 <td>町から抜けます。</td>
+</tr>
+<tr>
+<td>add ユーザーネーム</td>
+<td>町へプレイヤーを招待します(市長のみ)/accept (承諾) /deny (拒否)</td>
+</tr>
+<tr>
+<td>/town kick ユーザーネーム</td>
+<td>町からプレイヤーをキックします(市長のみ)</td>
+</tr>
+<tr>
+<td>/town invite</td>
+<td>あなたの街への招待状を受け取ったプレイヤーのリストを表示します。</td>
+</tr>
+<tr>
+<td>/town spawn</td>
+<td>町のスポーン地点にテレポートします。</td>
+</tr>
+<tr>
+<td>/town outpost 数字</td>
+<td>指定したアウトポストにテレポートします(アウトポストに設定した順番で数字が割り当てられる)</td>
+</tr>
+<tr>
+<td>/town set spawn</td>
+<td>自分がいる場所を町のスポーン地点に設定する。(ホームブロックの中のみ)</td>
+</tr>
+<tr>
+<td>/town spawn 町の名前</td>
+<td>指定した町のスポーン地点にテレポートする。(パブリックのみ)</td>
 </tr>
 <tr>
 <td>/town list</td>
@@ -318,26 +362,6 @@
 <tr>
 <td>/town plots 町の名前</td>
 <td>町が所有する土地とその種類/収益の役立つリストを表示します。</td>
-</tr>
-<tr>
-<td>/town new 町の名前</td>
-<td>新しい町を作ります。</td>
-</tr>
-<tr>
-<td>/town add ユーザーネーム</td>
-<td>町へプレイヤーを招待します(市長のみ)/accept (承諾) /deny (拒否)</td>
-</tr>
-<tr>
-<td>/town kick ユーザーネーム</td>
-<td>町からプレイヤーをキックします(市長のみ)</td>
-</tr>
-<tr>
-<td>/town invite</td>
-<td>あなたの街への招待状を受け取ったプレイヤーのリストを表示します。</td>
-</tr>
-<tr>
-<td>/town i</td>
-<td></td>
 </tr>
 </tbody>
 </table>
