@@ -53,4 +53,8 @@ order: 100
 /town online | 自分の町のオンラインプレイヤーを表示します。
 /town plots 町の名前 | 町が所有する土地とその種類/収益の役立つリストを表示します。
 /town baltop | 指定した町の最も裕福なプレイヤーを表示します。
-
+/town allylist 町の名前 | タウンの同盟者のリストを表示します。
+/town enemylist | 町の敵のリストを表示します。
+/town merge 町の名前 | 指定した町と自分の町を合併します。
+/town outlawlist 町の名前 | 町の無法者のリストを表示します。
+/town outlaw add/remove ユーザーネーム | 町の無法者リストに無法者を追加または削除します
