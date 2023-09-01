@@ -31,7 +31,7 @@ order: 100
 /town 街の名前 | 指定した町の情報を表示します。
 /town here | 自分が立っている町の情報を表示します。
 /town new 町の名前 | 新しい町を作ります。
-/town claim | 今立っている土地を町の土地にします。
+/town claim | 今立っている土地を町の土地にします。(16×16)
 /town claim auto | 自動で周囲の土地を購入します。(町の銀行にお金がある場合のみ)
 /town claim outpost | 今立っている土地をアウトポストに設定します。
 /town unclaim | 土地を手放します。
@@ -79,6 +79,12 @@ order: 100
 /town set shopprice 金額 | 町のショッププロットのデフォルトのコストを設定します
 /town set shoptax 金額 | 各居住者が所有する店舗敷地ごとに、毎日各居住者から徴収する税金を設定します。
 /town set embassyprice 金額 | 町の大使館敷地のデフォルトのコストを設定します。
-/town set embassyprice 金額 | 町の大使館敷地のデフォルトのコストを設定します。
 /town set embassytax 金額 | 各居住者が所有する大使館敷地ごとに、毎日各居住者から徴収する税金を設定します。
 /town set title ユーザーネーム タイトル | 町のメンバーに称号を追加します。(市長のみ)
+/town set primaryjail |  あなたの町の主要な刑務所を設定します。
+/town toggle explosion | 街中の爆発をオン/オフを切り替えます。
+/town toggle fire | 街中の延焼のオン/オフを切り替えます。
+/town toggle mobs | 街中の敵対的なMobのスポーンをオン/オフを切り替えます。
+/town toggle public | スポーンと街のホームブロックの位置を公開のオン/オフを切り替えます。
+/town toggle pvp | 街中でのPVPのオン/オフを切り替えます。(使用不可)
+
